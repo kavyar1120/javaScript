@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="toggle-btn">Show / Hide Message</button>
+  <div id="message" style="background: lightgray; padding: 10px; margin-top: 10px;">
+    This is a secret message!
+  </div>
+
+  <script>
+    const box = document.querySelector("#message");
+    const btn = document.querySelector("#toggle-btn");
+
+    // Function to handle the toggle
+    const toggleVisibility = () => {
+      if (box.style.display === "none") {
+        box.style.display = "block";
+      } else {
+        box.style.display = "none";
+      }
+    };
+
+    btn.addEventListener("click", toggleVisibility);
+  </script>
+</body>
+</html>
