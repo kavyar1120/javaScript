@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="status"></h2>
+    <button id="add-btn">show details</button>
+
+
+    <script>
+        const details={name:"kavya", city:"hubli",course:"cs" };
+        const button=document.querySelector("#add-btn");
+        button.addEventListener("click", () => {
+        showdetails(details);});
+
+        const showdetails=({name,city,course})=>{
+            const text=document.querySelector("#status");
+            text.innerText= `i am completed  ${name} ${city} ${course}`;
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="profile"></div>
+  <script>
+    const student={
+        name:"kavya",
+        course:"M.Sc",
+        city:"davanagere"
+    };
+    const container=document.querySelector("#profile");
+
+    container.innerHTML=`<h1>${student.name}</h1>
+      <p>Course: ${student.course}</p>
+      <p>Location: ${student.city}</p>
+     ` ;
+      </script>  
+</body>
+</html>

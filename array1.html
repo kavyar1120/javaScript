@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h2>my task</h2>></h2>
+    <div id="task"></div>
+
+
+    <script>
+
+        let tasks=["styudywell","buildproject","exerice"];
+        let container =document.querySelector("#task");
+
+        for(let task of tasks) {
+            let div=document.createElement("div");
+            div.style.margin="10px";
+
+            let checkbox=document.createElement("input");
+            checkbox.type="checkbox";
+
+            let label=document.createElement("label");
+            label.innerText=" "+task;
+
+            div.appendChild(checkbox);
+            div.appendChild(label);
+            container.appendChild(div);
+        }
+    </script>
+</body>
+</html>

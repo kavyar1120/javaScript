@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="status"></h2>
+
+    <script>
+        const car={brand:"Maruti", model:"800",fuel:"CNG" };
+
+        const showCarInfo=({brand,model})=>{
+            const text=document.querySelector("#status");
+            text.innerText=`you are driving a ${brand} ${model}`;
+        };
+        showCarInfo(car);
+    </script>
+</body>
+</html>

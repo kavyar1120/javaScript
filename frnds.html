@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>name: <span id="count-value">0</span></h2>
+    <button id="add-btn">change name</button>
+
+    <script>
+        let count=0;
+        const countname=document.querySelector("#count-value");
+        const button=document.querySelector("#add-btn");
+
+        button.addEventListener("click", () => {
+            if(count===1){
+            countname.innerText="kavya"
+            }
+            if(count===2){
+                countname.innerText="indu"
+            }
+            if(count>=3){
+                count=0;
+            }
+            count=count+1;
+        });
+
+    </script>
+
+</body>
+</html>
